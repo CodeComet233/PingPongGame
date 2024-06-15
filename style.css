@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    overflow: hidden;
+}
+
+body {
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#gameBoard {
+    width: 500px;
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+}
+
+#scores {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#PlayerScore1{
+    font-size: 25px;
+    font-weight: 900;
+    color:blue;
+}
+
+#PlayerScore2{
+    font-size: 25px;
+    font-weight: 900;
+    color:red;
+}
+
+#players {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    border: 1px solid;
+    margin-top: 10px;
+    position: relative;
+}
+
+#paddle1 {
+    height: 80px;
+    width: 10px;
+    background-color: blue;
+    position: relative;
+}
+
+#paddle2 {
+    height: 80px;
+    width: 10px;
+    background-color: red;
+    position: relative;
+}
+
+#ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+#startandArrows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#arrows {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    margin-top: 10px;
+    gap:10px;
+}
+
+#startGame {
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: transparent;
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 700;
+    color:red;
+    cursor: pointer;
+}
+
+#resetGame {
+    display: none;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: transparent;
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 700;
+    color:red;
+    cursor: pointer;
+}
+
+#up1,#up2,#down1,#down2{
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: transparent;
+    font-size: 30px;
+    color:red;
+    cursor: pointer;
+    position: relative;
+}
+
+#down1 {
+    color:blue;
+}
+
+#up2 {
+    color:green;
+}
+
+#down2 {
+    color:yellowgreen;
+}
